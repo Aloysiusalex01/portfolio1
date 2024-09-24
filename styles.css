@@ -1,0 +1,213 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-left: 100px;
+}
+.logo{
+    width: 140px;
+}
+.link-items{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.links:hover{
+color: red;
+text-decoration: underline;
+}
+.homecontent{
+    margin: 13% 0px 0px 8%;
+    margin-left: 130px;
+}
+#username{
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-family: "Anton", system-ui;
+}
+#iname{
+  font-family: "Anton", system-ui;
+  color: orangered;  
+}
+#user details{
+    line-height: 1.2;
+}
+#dowload{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.homeImage{
+    width: 50%;
+    height: 75%;
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50px);
+    transition: bottom 2s,left 1s;
+}
+.homeImage:hover #shape{
+    bottom: 60px;
+}
+.homeImage:hover #girl{
+    left: 30%;
+}
+.sectionhead{
+    text-align: center;
+}
+.mainhead{
+    font-family: "Anton", system-ui;
+    font-size: 30px;
+}
+.subhead{
+   font-family:"Sofadi One", system-ui; 
+   color: orangered;
+   font-size: 30px;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin: 20px 0px;
+
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.barhead, .barpercentage{
+font-weight: 500;
+font-size: 1.3rem;
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    background-color: orangered;
+    width: 94%;
+}
+.cssbar{
+    background-color: orangered;
+    width: 89%; 
+}
+.javabar{
+    background-color: orangered;
+    width: 80%;   
+}
+.jangobar{
+    background-color: orangered;
+    width: 85%; 
+}
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+.iconcollections{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    /* border: solid; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover{
+background-image: linear-gradient(to bottom right, orangered,black);
+}
+.icon:hover .brands{
+color: white;
+animation: rotate 3s;
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(40deg);
+    }
+    20%{
+        transform: rotate(-40deg);
+    }
+    40%{
+        transform: rotate(40deg);
+    }
+    60%{
+        transform: rotate(-40deg);
+    }
+    80%{
+        transform: rotate(40deg);
+    }
+    100%{
+        transform: rotate(-40deg);
+    }
+}
+footer{
+    margin-top: 8%;
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.uparrow{
+    float: right;
+    margin:-30px 20PX;
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: azure;
+}
+::-webkit-scrollbar-thumb{
+    background-color: orangered;
+    border-radius: 10px;
+}
